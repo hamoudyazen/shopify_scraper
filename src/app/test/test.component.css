@@ -1,0 +1,99 @@
+.slider-container {
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100px;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* Added for arrow positioning */
+}
+
+.slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    justify-content: center;
+}
+
+.logo1 {
+    flex: 0 0 auto;
+    padding: 30px;
+    width: 100px;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.logo1:hover {
+    transform: scale(1.02);
+}
+
+.logo1 img {
+    max-height: 10%;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+
+/* Styling for left and right arrows */
+.left-arrow,
+.right-arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    /* Adjust arrow width as needed */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+    /* Ensure arrows are above the slider */
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+.left-arrow {
+    padding: 30px;
+    width: 30px;
+
+}
+
+.right-arrow {
+    padding: 30px;
+    width: 30px;
+}
+
+@media only screen and (max-device-width: 1000px) {
+    .left-arrow {
+        padding: 5px;
+        width: 20px;
+    }
+
+    .right-arrow {
+        padding: 5px;
+        width: 20px;
+
+    }
+
+    .logo1 {
+        flex: 0 0 auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 10px;
+        transform: scale(1);
+        transition: transform 0.3s ease;
+    }
+
+    .logo1 img {
+        max-height: 5%;
+        object-fit: contain;
+        mix-blend-mode: color-burn;
+    }
+}

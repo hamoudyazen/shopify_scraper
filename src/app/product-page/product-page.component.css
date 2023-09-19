@@ -1,0 +1,72 @@
+/* Add this to reset margin and padding for the whole page */
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Container to hold the cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1px auto;
+    /* Adjust as needed */
+}
+
+/* Style for each card */
+.product-card {
+    background-color: #fff;
+    width: calc(25% - 1px);
+    /* Adjust the card width and margin as needed */
+    box-sizing: border-box;
+
+    /* To include padding and border in the total width */
+}
+
+.produtc-image {
+    background-color: #eeee;
+    padding-top: 40px;
+
+}
+
+/* Card title style */
+.product-card h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 2px;
+}
+
+/* Card image style */
+.product-card img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+/* Other product details style */
+.product-card p {
+    margin-bottom: 5px;
+}
+
+/* Styling for options, variants, and tags */
+.product-card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.product-card ul {
+    margin-bottom: 10px;
+}
+
+.product-card li {
+    list-style: none;
+}
+
+.product-card li::before {
+    content: "•";
+    /* Bullet point character */
+    margin-right: 5px;
+}

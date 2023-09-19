@@ -1,0 +1,11 @@
+<button (click)="exportToCSV()">Export as CSV</button>
+<!-- product-page.component.html -->
+<div class="card-container">
+    <div class="product-card" *ngFor="let product of airjordan1final  | slice:0:3000; let i=index ">
+        <img class="produtc-image" [src]="product.images[0].src" alt="Product Image">
+        <h3>{{ product.title }}</h3>
+        <h3 style="padding-bottom: 20px;">{{ product.price }}</h3>
+        {{i}}
+
+    </div>
+</div>
